@@ -3,7 +3,7 @@
 // base setup
 
 var mongoose = require('mongoose')
-mongoose.connect('mongodb://35.185.213.109:27017/iotec-adsoft')
+mongoose.connect('mongodb://35.185.213.109:27017/iotec-roeeyn')
 var Device = require('./app/models/device');
 
 // call the packages
@@ -23,7 +23,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
 
-var port = process.env.PORT || 8081; 
+var port = process.env.PORT || 8130; 
 
 // routes for our api
 
